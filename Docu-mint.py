@@ -3,8 +3,7 @@ import mimetypes
 
 def es_archivo_de_texto(ruta_archivo, extensiones_excluidas=None):
     """
-    Determina si un archivo es de texto basado en su extensión y tipo MIME.
-    Excluye archivos con extensiones específicas si se proporcionan.
+    Determina si un archivo es de texto basado en su extensión y tipo MIME. Excluye archivos con extensiones específicas si se proporcionan.
     """
     if not mimetypes.inited:
         mimetypes.init()
